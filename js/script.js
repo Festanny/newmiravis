@@ -1,6 +1,6 @@
 // href
 $("body").on('click', '[href*="#"]', function (e) {
-	var fixed_offset = $('header nav').height() + 30;
+	var fixed_offset = $('header nav').height();
 	$('html,body').stop().animate({
 		scrollTop: $(this.hash).offset().top - fixed_offset
 	}, 1000);
@@ -57,4 +57,23 @@ $('#upbutton').click(function() {
     $('html, body').stop().animate({
         scrollTop: 0
     }, 1000);
+});
+
+
+
+// fast active
+// function fast(count) {
+// 	$('header nav .img ul li a')[0].className = "";
+//     $('header nav .img ul li a')[1].className = "";
+//     $('header nav .img ul li a')[2].className = "";
+//     $('header nav .img ul li a')[count].className = "active";
+// }
+
+$(window).scroll(function () {
+	if ($(window).scrollTop() > $('#about').offset().top - 60) {
+		$('#fast1').addClass('active');
+	}
+	else if ($(window).scrollTop() > $('#whyWe').offset().top - 60) {
+		$('#fast2').addClass('active');
+	}
 });

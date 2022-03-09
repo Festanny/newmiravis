@@ -113,12 +113,13 @@ header nav .container div:hover ul li a {
     background-color: var(--block);
     min-width: 200px;
     border-bottom: 1px solid rgb(31, 31, 31);
+    transition: .3s;
+    border-left: 3px solid transparent;
 }
 
 header nav .container div:hover ul li a.active {
     background-color: rgb(31, 31, 31);
     border-left: 3px solid #fff;
-    font-weight: bold;
 }
 
 header nav .container div:hover ul li a:hover {
