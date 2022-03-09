@@ -10,7 +10,7 @@ $("body").on('click', '[href*="#"]', function (e) {
 // scroll fixed nav
 $(window).scroll(function () {
 	if ($(window).width() > 799) {
-		if ($(window).scrollTop() > $('header').height()) {
+		if ($(window).scrollTop() > 0) {
 			$('header nav').addClass('fixed');
 		} else {
 			$('header nav').removeClass('fixed');
