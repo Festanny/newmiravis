@@ -3,6 +3,7 @@
     --block: #2C2C2C;
     --text: #fff;
     --text-green: #689775;
+    --border-b: #A1C9D4;
 }
 
 html,
@@ -25,9 +26,23 @@ a {
     color: #fff;
 }
 
-.container-b {
-    width: 1800px;
-    margin: 0 auto;
+section {
+    padding: 120px 60px 0 60px;
+    padding-top: 120px;
+}
+section:first-of-type {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 300px;
+    background: linear-gradient(180deg, #010102 0%, #161616 50.04%), #161616;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: var(--text-green);
 }
 
 .container {
@@ -162,4 +177,96 @@ header .logo {
     transform: translateY(-50%);
     text-align: right;
     margin: 0 auto;
+}
+
+.about .info-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .info-block .img-block {
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+}
+
+.about .info-block .img-block .img {
+    width: 250px;
+}
+
+.about .info-block .img-block .img img {
+    width: 100%;
+}
+
+.about .info-block .img-block .friends {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.about .info-block .img-block .friends span {
+    margin-right: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.about .info-block .block {
+    width: 450px;
+    height: 450px;
+    text-align: center;
+    border: 30px solid var(--border-b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+}
+
+.about .info-block .block .text {
+    transform: rotate(-45deg);
+}
+
+.about .info-block .block span {
+    display: block;
+    margin-top: 28px;
+    width: 340px;
+}
+
+.circles {
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+}
+
+.circles div {
+    border-radius: 50%;
+}
+.circles div:nth-of-type(1) {
+    width: 75px;
+    height: 75px;
+    border: 9px solid var(--text-green);
+    transform: translateY(370px) translateX(-215px);
+}
+.circles div:nth-of-type(2) {
+    width: 120px;
+    height: 120px;
+    border: 13px solid var(--text-green);
+    transform: translateY(250px) translateX(-130px);
+}
+.circles div:nth-of-type(3) {
+    width: 62px;
+    height: 62px;
+    border: 5px solid var(--text-green);
+    transform: translateY(60px) translateX(-55px);
+}
+.circles div:nth-of-type(4) {
+    width: 185px;
+    height: 185px;
+    border: 20px solid var(--text-green);
+}
+.circles div:nth-of-type(5) {
+    width: 75px;
+    height: 75px;
+    border: 9px solid var(--text-green);
+    transform: translateY(-260px) translateX(110px);
 }
