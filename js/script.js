@@ -38,3 +38,23 @@ let elements = document.querySelectorAll('.el');
 for (let elm of elements) {
 	observer.observe(elm);
 }
+
+// Up btn
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 250) {
+		$('#upbutton').css({
+			opacity: 1,
+			pointerEvents: 'auto'
+		});
+    } else {
+        $('#upbutton').css({
+			opacity: 0.3,
+			pointerEvents: 'none'
+		}).stop(true, false);
+    }
+});
+$('#upbutton').click(function() {
+    $('html, body').stop().animate({
+        scrollTop: 0
+    }, 1000);
+});
