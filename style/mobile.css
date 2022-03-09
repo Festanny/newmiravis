@@ -1,0 +1,465 @@
+@media screen and (max-width: 1439px) {
+    .container {
+        width: 1280px;
+    }
+    .container-b {
+        width: 1150px;
+    }
+    .about .info-block, .address .info-block {
+        grid-template-rows: 320px 320px;
+        grid-template-columns: 320px 320px 320px 320px;
+    }
+    .about .info-block .block,
+    .address .info-block .block {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .container {
+        width: 1180px;
+    }
+    .container-b {
+        width: 1050px;
+    }
+    .about .info-block, .address .info-block {
+        grid-template-rows: 295px 295px;
+        grid-template-columns: 295px 295px 295px 295px;
+    }
+    .price .info-block .block {
+        padding: 50px 18px;
+    }
+    .price .info-block .block .info .img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 1179px) {
+    .container {
+        width: 1000px;
+    }
+    .container-b {
+        width: 900px;
+    }
+    h1 {
+        font-size: 34px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 17px;
+    }
+    header .header .info .text {
+        font-size: 60px;
+    }
+    .price .info-block .block {
+        width: 24%;
+    }
+    .about .info-block, .address .info-block {
+        grid-template-rows: 320px 320px;
+        grid-template-columns: 250px 250px 250px 250px;
+    }
+    header .info .desc span:nth-of-type(1) {
+        flex: 2;
+    }
+    header .info .desc span:nth-of-type(2) {
+        flex: 3;
+    }
+    .about .info-block .block:nth-of-type(1),
+    .address .info-block .block:nth-of-type(1) {
+        padding: 40px;
+    }
+    .about .info-block .block h3,
+    .address .info-block .block h3 {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .about .info-block .block .img, .address .info-block .block .img {
+        width: 85px;
+        height: 85px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .container {
+        width: 900px;
+    }
+    .container-b {
+        width: 90%;
+    }
+    .about .info-block, .address .info-block {
+        grid-template-rows: 320px 320px;
+        grid-template-columns: 225px 225px 225px 225px;
+    }
+    .about .info-block .block,
+    .address .info-block .block {
+        font-size: 15px;
+    }
+    .address .info-block .block:nth-of-type(2) {
+        padding-left: 0;
+    }
+    header .header .info .text {
+        font-size: 50px;
+    }
+    footer .footer .info span {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 899px) {
+    .container {
+        width: 800px;
+    }
+    .container-b {
+        width: 93%;
+    }
+    body,
+    .btn {
+        font-size: 15px;
+    }
+    .about .info-block, .address .info-block {
+        grid-template-rows: 350px 350px;
+        grid-template-columns: 200px 200px 200px 200px;
+    }
+    .about .info-block .block, .address .info-block .block {
+        font-size: 14px;
+    }
+    header nav .menu a {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .price .info-block .block {
+        width: 31%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .container {
+        width: 100%;
+    }
+    .container-b {
+        width: 90%;
+    }
+    header {
+        height: auto;
+    }
+    header .paddingNav {
+        padding: 0;
+    }
+    header .header {
+        margin-top: 120px;
+        margin-bottom: 70px;
+    }
+    header .info .btn-anchor {
+        margin-top: 70px;
+    }
+    .about .info-block {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 200px 200px 250px 250px;
+    }
+    .address .info-block {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 120px 200px 200px 250px;
+    }
+    .h {
+        padding: 30px 0;
+        margin: 60px 0;
+    }
+    section {
+        margin-top: 90px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .address .info-block .block:nth-of-type(1) {
+        grid-column: 1/3;
+        grid-row: 2/4;
+    }
+    .address .info-block .block:nth-of-type(2) {
+        grid-column: 2; 
+        grid-row: 1;
+        justify-content: flex-end;
+    }
+    .address .info-block .block:nth-of-type(2) .map {
+        border-radius: 60px 0 0 0;
+        padding: 10px 10px 0 10px;
+    }
+    .address .info-block .block:nth-of-type(2) .map .point {
+        border-radius: 50% 0 0 0;
+    }
+    .about .info-block .block:nth-of-type(1), .address .info-block .block:nth-of-type(1) {
+        padding: 30px;
+    }
+    .address .info-block .block:nth-of-type(3) {
+        grid-column: 1; 
+        grid-row: 4;
+    }
+    .address .info-block .block:nth-of-type(4) {
+        grid-column: 2; 
+        grid-row: 4;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header .header .info .text {
+        font-size: 42px;
+    }
+    header .info .desc span:nth-of-type(1) {
+        flex: 3;
+    }
+    header .info .desc span:nth-of-type(2) {
+        flex: 4;
+    }
+    header .info .btn-anchor .btn {
+        padding: 15px 70px 15px 36px;
+    }
+    header .info .btn-anchor .btn::before {
+        top: 20px;
+    }
+    footer .footer {
+        padding: 60px 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header nav .btn-write .btn {
+        padding: 8px 20px;
+    }
+    header .menu {
+        display: none;
+    }
+    header .menu-m {
+        display: block;
+    }
+    footer .footer .logo .img,
+    footer .footer .web-studio .img {
+        height: 40px;
+    }
+    header nav .btn-write .btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .price .info-block .block {
+        width: 48%;
+    }
+    .about .info-block {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 200px 200px 280px 280px;
+    }
+    .address .info-block {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 120px 200px 200px 280px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header .header .info .text {
+        font-size: 40px;
+    }
+    header .info .btn-anchor .btn {
+        padding: 13px 60px 13px 30px;
+    }
+    header .info .btn-anchor .btn::before {
+        right: 26px;
+        top: 18px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 21px;
+    }
+    .about .info-block .block .img, .address .info-block .block .img {
+        width: 80px;
+        height: 80px;
+    }
+    .h {
+        margin: 40px 0;
+        padding: 25px 0;
+    }
+    section {
+        margin-top: 70px;
+    }
+    header .info .desc span:nth-of-type(1) {
+        flex: 4;
+    }
+    header .info .desc span:nth-of-type(2) {
+        flex: 3;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .about .info-block {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 230px 230px 300px 300px;
+    }
+    .address .info-block {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 120px 200px 200px 300px;
+    }
+    .about .info-block .block .img, .address .info-block .block .img {
+        width: 75px;
+        height: 75px;
+    }
+    .price .info-block .block .info .img {
+        width: 110px;
+        height: 110px;
+    }
+    header .header .info .text {
+        font-size: 35px;
+    }
+    header .header {
+        margin-top: 110px;
+        margin-bottom: 60px;
+    }
+    header .info .btn-anchor {
+        margin-top: 60px;
+    }
+    .about .info-block .block, .address .info-block .block {
+        padding: 20px;
+    }
+    footer .footer {
+        flex-wrap: wrap;
+        padding: 45px 0;
+    }
+    footer .footer .info {
+        order: 3;
+        width: 100%;
+        flex: auto;
+        margin: 20px 0 0 0;
+    }
+    footer .footer .web-studio {
+        flex: 1;
+    }
+    footer .footer .logo {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header .header .info .text {
+        font-size: 32px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    .about .info-block {
+        grid-template-columns: 100%;
+        grid-template-rows: auto 220px 220px 220px 220px;
+    }
+    .address .info-block {
+        grid-template-columns: 100%;
+        grid-template-rows: auto 220px 220px;
+    }
+    .about .info-block .block:nth-of-type(1),
+    .address .info-block .block:nth-of-type(1) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .about .info-block .block:nth-of-type(4) {
+        grid-row: 2;
+    }
+    .address .info-block .block:nth-of-type(2) {
+        display: none;
+    }
+    .address .info-block .block:nth-of-type(3) {
+        grid-row: 2;
+    }
+    .address .info-block .block:nth-of-type(4) {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .price .info-block .block {
+        width: 100%;
+    }
+    .price .info-block .block .cost {
+        padding-top: 20px;
+    }
+    .price .info-block .block .info .desc {
+        padding-bottom: 20px;
+    }
+    .price .info-block .block .info .desc h3,
+    .price .info-block .block .cost h3 {
+        margin-bottom: 8px;
+    }
+    .price .info-block .block {
+        padding: 30px 18px;
+    }
+    .offcanvas-body .menu a {
+        font-size: 17px;
+    }
+    h1 {
+        font-size: 23px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header nav .logo .img {
+        height: 40px;
+    }
+    header .header .info .text {
+        font-size: 30px;
+    }
+    header .info .desc {
+        flex-wrap: wrap;
+    }
+    header .info .desc span:nth-of-type(1),
+    header .info .desc span:nth-of-type(2) {
+        flex: auto;
+        width: 100%;
+    }
+    header .info .desc span:nth-of-type(2) {
+        margin-top: 20px;
+    }
+    footer .footer {
+        padding: 40px 0;
+    }
+    section {
+        margin-top: 60px;
+    }
+    .h {
+        padding: 25px 10px;
+    }
+    .about .info-block {
+        grid-template-rows: auto 230px 230px 230px 230px;
+    }
+    .address .info-block {
+        grid-template-rows: auto 230px 230px;
+    }
+    header nav .logo .img {
+        height: 35px;
+    }
+    footer .footer .logo .img, footer .footer .web-studio .img {
+        height: 35px;
+    }
+    .menu-m .menuBlock {
+        padding: 8px 8px 8px 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .price .info-block .block .info .img {
+        width: 100px;
+        height: 100px;
+    }
+    header .header .info .text {
+        font-size: 29px;
+    }
+    .h {
+        padding: 15px 7px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+}
