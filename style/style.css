@@ -275,6 +275,19 @@ header .logo {
     text-transform: uppercase;
 }
 
+.about .info-block .img-block .friends a {
+    height: 40px;
+}
+.about .info-block .img-block .friends a img {
+    height: 100%;
+    object-fit: contain;
+    filter: grayscale(1);
+    transition: .3s;
+}
+.about .info-block .img-block .friends:hover a img {
+    filter: grayscale(0);
+}
+
 .about .info-block .block,
 .whyWe .info-block .block:first-of-type {
     width: 450px;
