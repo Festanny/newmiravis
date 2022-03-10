@@ -92,8 +92,8 @@ function openSite(evt, nameSite) {
     }
     tablinks = document.querySelectorAll(".site .info-block .name span");
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].className = tablinks[i].className.replace("active", "");
     }
     document.getElementById(nameSite).style.display = "block";
-    evt.currentTarget.className += " active";
+    evt.currentTarget.className += "active";
 }
