@@ -59,21 +59,41 @@ $('#upbutton').click(function() {
     }, 1000);
 });
 
-
-
-// fast active
-// function fast(count) {
-// 	$('header nav .img ul li a')[0].className = "";
-//     $('header nav .img ul li a')[1].className = "";
-//     $('header nav .img ul li a')[2].className = "";
-//     $('header nav .img ul li a')[count].className = "active";
-// }
-
+// offset top
 $(window).scroll(function () {
-	if ($(window).scrollTop() > $('#about').offset().top - 60) {
+	if ($(window).scrollTop() >= $('#section1').offset().top - 60) {
 		$('#fast1').addClass('active');
 	}
-	else if ($(window).scrollTop() > $('#whyWe').offset().top - 60) {
+	else {
+		$('#fast1').removeClass('active');
+	}
+	if ($(window).scrollTop() >= $('#section2').offset().top - 60) {
 		$('#fast2').addClass('active');
+		$('#fast1').removeClass('active');
+	}
+	else {
+		$('#fast2').removeClass('active');
+	}
+	if ($(window).scrollTop() >= $('#section3').offset().top - 60) {
+		$('#fast3').addClass('active');
+		$('#fast2').removeClass('active');
+	}
+	else {
+		$('#fast3').removeClass('active');
 	}
 });
+
+// open desc site
+function openSite(evt, nameSite) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.querySelectorAll(".site .info-block .info");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.querySelectorAll(".site .info-block .name span");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(nameSite).style.display = "block";
+    evt.currentTarget.className += " active";
+}
