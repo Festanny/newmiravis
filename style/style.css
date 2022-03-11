@@ -649,6 +649,7 @@ section .site .info-block .info p:last-of-type {
     padding: 10px;
     text-transform: uppercase;
     box-sizing: border-box;
+    transform: scale(0.95);
 }
 
 .portfolio .info-block .block .text-h a {
@@ -660,6 +661,7 @@ section .site .info-block .info p:last-of-type {
 
 .portfolio .info-block .block:hover .text-h {
     opacity: 1;
+    transform: scale(1.05);
 }
 
 .portfolio .info-block .block:hover {
