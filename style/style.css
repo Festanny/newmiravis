@@ -188,7 +188,7 @@ header nav .container div:first-of-type > div::before {
     right: 40px;
 }
 
-header nav .btn-up #upbutton {
+header nav .btn-up #upButton {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -200,7 +200,7 @@ header nav .btn-up #upbutton {
     pointer-events: none;
 }
 
-header nav .btn-up #upbutton img {
+header nav .btn-up #upButton img {
     width: 38px;
     height: 23px;
     object-fit: contain;
@@ -586,4 +586,84 @@ section .site .info-block .info p:last-of-type {
 .trust .info-block .block span {
     flex: 1;
     padding-left: 30px;
+}
+
+.portfolio .info-block .block {
+    background-color: var(--span-active);
+    height: auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: .3s ease-in-out;
+    overflow: hidden;
+}
+
+.portfolio .info-block .block .img {
+    width: 100%;
+    height: 200px;
+}
+
+.portfolio .info-block .block .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio .info-block .block .text {
+    height: 150px;
+    padding: 36px 18px;
+}
+
+.portfolio .info-block .block:hover:before {
+    background: rgba(20, 21, 23, 0.6);
+    opacity: 1;
+}
+
+.portfolio .info-block .block:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 21, 23, 0.4);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.portfolio .info-block .block .text-h {
+    color: white;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 10px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+.portfolio .info-block .block .text-h a {
+    color: #fff;
+    padding: 25px 30px;
+    width: 87%;
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.portfolio .info-block .block:hover .text-h {
+    opacity: 1;
+}
+
+.portfolio .info-block .block:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    transform: scale(0.95);
 }

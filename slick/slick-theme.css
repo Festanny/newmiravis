@@ -23,8 +23,9 @@
     line-height: 0;
     position: absolute;
     top: 50%;
-    display: block;
-    width: 100px;
+    display: flex!important;
+    align-items: center;
+    width: 70px;
     height: 100%;
     padding: 0;
     -webkit-transform: translate(0, -50%);
@@ -50,7 +51,7 @@
 .slick-next:hover:before,
 .slick-next:focus:before
 {
-	background-color: #366294;
+	/* background-color: #366294; */
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before
@@ -84,30 +85,28 @@
 .slick-next:before
 {
     content: '';
-	background-image: url(../image/control/next.svg);
+	background-image: url(../image/arrow-green.svg);
 	position: absolute;
-	background-color: #517088;
-    border-radius: 50%;
     background-repeat: no-repeat;
     background-position: 50%;
-    background-size: 8px 12px;
-	width: 44px;
-	height: 44px;
-	left: 30px;
+    background-size: contain;
+	width: 50px;
+	height: 30px;
+	right: 0;
+    transform: rotate(270deg);
 }
 .slick-prev:before
 {
     content: '';
-	background-image: url(../image/control/prev.svg);
+	background-image: url(../image/arrow-green.svg);
 	position: absolute;
-	background-color: #517088;
-    border-radius: 50%;
     background-repeat: no-repeat;
     background-position: 50%;
-    background-size: 8px 12px;
-	width: 44px;
-	height: 44px;
-	right: 30px;
+    background-size: contain;
+	width: 50px;
+	height: 30px;
+	left: 0;
+    transform: rotate(90deg);
 }
 
 [dir='rtl'] .slick-next:before
@@ -118,7 +117,7 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .slick-dots
@@ -126,9 +125,9 @@
     position: absolute;
     bottom: -25px;
 
-    display: block;
+    display: none;
 
-    width: 100%;
+    width: 0;
     padding: 0;
     margin: 0;
 

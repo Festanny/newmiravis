@@ -42,18 +42,18 @@ for (let elm of elements) {
 // Up btn
 $(window).scroll(function() {
     if ($(this).scrollTop() > 250) {
-		$('#upbutton').css({
+		$('#upButton').css({
 			opacity: 1,
 			pointerEvents: 'auto'
 		});
     } else {
-        $('#upbutton').css({
+        $('#upButton').css({
 			opacity: 0.3,
 			pointerEvents: 'none'
 		}).stop(true, false);
     }
 });
-$('#upbutton').click(function() {
+$('#upButton').click(function() {
     $('html, body').stop().animate({
         scrollTop: 0
     }, 1000);
@@ -87,6 +87,13 @@ $(window).scroll(function () {
 	}
 	else {
 		$('#fast4').removeClass('active');
+	}
+	if ($(window).scrollTop() >= $('#section5').offset().top - 60) {
+		$('#fast5').addClass('active');
+		$('#fast4').removeClass('active');
+	}
+	else {
+		$('#fast5').removeClass('active');
 	}
 });
 
