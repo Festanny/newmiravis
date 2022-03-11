@@ -104,3 +104,14 @@ function openSite(evt, nameSite) {
     document.getElementById(nameSite).style.display = "block";
     evt.currentTarget.className += "active";
 }
+
+// carousel-portfolio
+$(document).ready(function(){
+	$('.carousel-portfolio').slick({
+		dots: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: false,
+		autoplaySpeed: 5000
+		});
+});
