@@ -81,6 +81,13 @@ $(window).scroll(function () {
 	else {
 		$('#fast3').removeClass('active');
 	}
+	if ($(window).scrollTop() >= $('#section4').offset().top - 60) {
+		$('#fast4').addClass('active');
+		$('#fast3').removeClass('active');
+	}
+	else {
+		$('#fast4').removeClass('active');
+	}
 });
 
 // open desc site
