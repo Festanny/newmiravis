@@ -122,10 +122,10 @@ function openSite(evt, nameSite) {
 // carousel-portfolio
 $(document).ready(function(){
 	$('.carousel-portfolio').slick({
-		dots: true,
+		dots: false,
 		slidesToShow: 4,
 		slidesToScroll: 1,
-		autoplay: false,
+		autoplay: true,
 		autoplaySpeed: 5000
 		});
 });
@@ -133,10 +133,10 @@ $(document).ready(function(){
 // carousel-reviews
 $(document).ready(function(){
 	$('.carousel-reviews').slick({
-		dots: true,
+		dots: false,
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		autoplay: false,
+		autoplay: true,
 		autoplaySpeed: 5000
 		});
 });
