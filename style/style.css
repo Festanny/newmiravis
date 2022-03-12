@@ -62,9 +62,9 @@ h2 {
     font-size: 24px;
 }
 h3 {
+    font-size: 18px;
     margin: 0;
     padding: 0;
-    font-size: 18px;
     color: var(--text);
 }
 
@@ -612,8 +612,9 @@ section .site .info-block .info p:last-of-type {
     padding: 36px 18px;
 }
 
-.portfolio .info-block .block:hover:before {
-    background: rgba(20, 21, 23, 0.6);
+.portfolio .info-block .block:hover:before,
+.reviews .info-block .block .img:hover:before {
+    background: rgba(20, 21, 23, 0.7);
     opacity: 1;
 }
 
@@ -673,11 +674,55 @@ section .site .info-block .info p:last-of-type {
     display: flex;
     justify-content: space-between;
     height: 350px;
+    background-color: var(--block);
 }
 
-.reviews .info-block .block .img {
+.reviews .info-block .block > .img {
+    position: relative;
     height: 100%;
+    width: 637px;
 }
+
 .reviews .info-block .block .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reviews .info-block .block .text {
+    padding: 50px;
+    flex: 1;
+}
+
+.reviews .info-block .block .text .text-main {
+    height: 171px;
+    overflow-y: auto;
+}
+
+.reviews .info-block .block .text .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.reviews .info-block .block .text .logo .info {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.reviews .info-block .block .text .logo .btn {
+    padding: 10px 20px;
+}
+
+.reviews .info-block .block .text .logo .img {
+    border-right: 1px solid var(--text);
+    height: 40px;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+.reviews .info-block .block .text .logo .img img {
     height: 100%;
 }
