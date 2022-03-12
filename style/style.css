@@ -646,13 +646,16 @@ section .site .info-block .info p:last-of-type {
     align-items: center;
     opacity: 0;
     transition: all .3s ease-in-out;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     letter-spacing: 2px;
     padding: 10px;
     text-transform: uppercase;
     box-sizing: border-box;
-    font-weight: bold;
+}
+
+.reviews .info-block .block .text-h {
+    font-size: 18px;
 }
 
 .portfolio .info-block .block .text-h a,
