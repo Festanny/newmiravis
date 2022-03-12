@@ -122,3 +122,14 @@ $(document).ready(function(){
 		autoplaySpeed: 5000
 		});
 });
+
+// carousel-reviews
+$(document).ready(function(){
+	$('.carousel-reviews').slick({
+		dots: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: false,
+		autoplaySpeed: 5000
+		});
+});

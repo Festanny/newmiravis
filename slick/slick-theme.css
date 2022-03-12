@@ -35,9 +35,9 @@
     color: transparent;
     border: none;
     outline: none;
-    background: transparent;
+    background: rgba(44, 44, 44, 0.1);
     margin-top: -2px;
-    transition: background .3s;
+    transition: background .3s ease-in-out;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -46,7 +46,6 @@
 {
     color: transparent;
     outline: none;
-    background: transparent;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -63,7 +62,7 @@
 
 .slick-next:hover,
 .slick-prev:hover {
-    background: rgba(44, 44, 44, 0.2);
+    background: rgba(44, 44, 44, 0.3);
 }
 
 .slick-prev
@@ -123,10 +122,12 @@
 }
 
 .slick-next:hover:before {
-    transform: rotate(270deg) scale(1.05) translateY(-75%);
+    /* transform: rotate(270deg) scale(1.05) translateY(-75%); */
+    transform: rotate(270deg) translateY(-75%);
 }
 .slick-prev:hover:before {
-    transform: rotate(90deg) scale(1.05) translateY(-75%);
+    /* transform: rotate(90deg) scale(1.05) translateY(-75%); */
+    transform: rotate(90deg) translateY(-75%);
 }
 
 [dir='rtl'] .slick-next:before
@@ -144,23 +145,17 @@
 {
     position: absolute;
     bottom: -25px;
-
     display: none;
-
     width: 0;
     padding: 0;
     margin: 0;
-
     list-style: none;
-
     text-align: center;
 }
 .slick-dots li
 {
     position: relative;
-
     display: inline-block;
-
     width: 20px;
     height: 20px;
     margin: 0 5px;

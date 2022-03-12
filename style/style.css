@@ -618,7 +618,8 @@ section .site .info-block .info p:last-of-type {
     opacity: 1;
 }
 
-.portfolio .info-block .block:before {
+.portfolio .info-block .block:before,
+.reviews .info-block .block .img:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -631,7 +632,8 @@ section .site .info-block .info p:last-of-type {
     transition: all .3s ease-in-out;
 }
 
-.portfolio .info-block .block .text-h {
+.portfolio .info-block .block .text-h,
+.reviews .info-block .block .text-h {
     color: white;
     z-index: 5;
     position: absolute;
@@ -650,19 +652,21 @@ section .site .info-block .info p:last-of-type {
     padding: 10px;
     text-transform: uppercase;
     box-sizing: border-box;
-    transform: scale(0.95);
+    font-weight: bold;
 }
 
-.portfolio .info-block .block .text-h a {
+.portfolio .info-block .block .text-h a,
+.reviews .info-block .block .text-h a {
     color: #fff;
     padding: 25px 30px;
     width: 87%;
     border: 1px solid rgba(255, 255, 255, 1);
 }
 
-.portfolio .info-block .block:hover .text-h {
+.portfolio .info-block .block:hover .text-h,
+.reviews .info-block .block .img:hover .text-h {
     opacity: 1;
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .portfolio .info-block .block:hover {
@@ -675,6 +679,7 @@ section .site .info-block .info p:last-of-type {
     justify-content: space-between;
     height: 350px;
     background-color: var(--block);
+    display: flex!important;
 }
 
 .reviews .info-block .block > .img {
@@ -690,39 +695,34 @@ section .site .info-block .info p:last-of-type {
 }
 
 .reviews .info-block .block .text {
-    padding: 50px;
+    padding: 40px;
     flex: 1;
 }
 
 .reviews .info-block .block .text .text-main {
-    height: 171px;
+    height: 195px;
     overflow-y: auto;
 }
 
 .reviews .info-block .block .text .logo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 35px;
 }
 
-.reviews .info-block .block .text .logo .info {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-}
-
-.reviews .info-block .block .text .logo .btn {
-    padding: 10px 20px;
-}
-
-.reviews .info-block .block .text .logo .img {
+.reviews .info-block .block .text .logo .img-logo {
     border-right: 1px solid var(--text);
     height: 40px;
     padding-right: 20px;
     margin-right: 20px;
 }
 
-.reviews .info-block .block .text .logo .img img {
+.reviews .info-block .block .text .logo .img-logo img {
     height: 100%;
+}
+
+.reviews .slick-prev,
+.reviews .slick-next {
+    height: 100%;
+    margin-top: 0;
 }
