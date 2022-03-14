@@ -230,12 +230,19 @@ window.addEventListener("DOMContentLoaded", function() {
         if (!reg.test(this.value) || this.value.length < 5 || keyCode > 47 && keyCode < 58) this.value = new_value;
         if (event.type == "blur" && this.value.length < 5)  this.value = ""
     }
-
     input.addEventListener("input", mask, false);
     input.addEventListener("focus", mask, false);
     input.addEventListener("blur", mask, true);
     input.addEventListener("keydown", mask, false)
-
   });
-
 });
+
+// preloader
+window.onload = function () {
+	document.body.classList.add('loaded_hiding');
+	window.setTimeout(function () {
+		document.body.classList.add('loaded');
+		document.body.classList.remove('loaded_hiding');
+	}, 500);
+	document.body.style.overflow = 'auto';
+}
