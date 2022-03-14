@@ -166,6 +166,8 @@ function labelUp(evt) {
 function labelDown(evt) {
 	if (inputClick[evt].value == '') {
 		labelFocus[evt].classList = "labelUp";
-		inputClick[evt].classList.add('invalid');
+		if (labelFocus[evt].innerHTML != 'E-mail') {
+			inputClick[evt].classList.add('invalid');
+		}
 	}
 }
