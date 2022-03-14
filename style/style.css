@@ -63,6 +63,7 @@ section {
     padding: 90px 0;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 section:first-of-type {
