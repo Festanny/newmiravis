@@ -154,3 +154,18 @@ $(document).ready(function(){
 		autoplaySpeed: 5000
 		});
 });
+
+// Label shift
+let inputClick = $('.order .block-form .inputRel input'),
+	labelFocus = $('.order .block-form .inputRel .labelUp');
+
+function labelUp(evt) {
+	inputClick[evt].classList.remove('invalid');
+	labelFocus[evt].classList = "labelFocus";
+}
+function labelDown(evt) {
+	if (inputClick[evt].value == '') {
+		labelFocus[evt].classList = "labelUp";
+		inputClick[evt].classList.add('invalid');
+	}
+}

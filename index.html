@@ -348,18 +348,35 @@
                     <div class="info-text-title">Заполните форму, и мы свяжемся с Вами в ближайшее время.</div>
                 </div>
                 <div class="info-block">
-                    <div class="block">
+                    <div class="block-form">
                         <form action="" method="POST">
-
+                            <div class="inputRel">
+                                <input type="text" id="fname" name="name" onfocus="labelUp(0)" onblur="labelDown(0)">
+                                <label for="fname" class="labelUp">Имя</label>
+                            </div>
+                            <div class="inputRel">
+                                <input type="phone" id="phone" name="phone" onfocus="labelUp(1)" onblur="labelDown(1)">
+                                <label for="phone" class="labelUp">Телефон *</label>
+                            </div>
+                            <div class="inputRel">
+                                <input type="email" id="email" name="email" onfocus="labelUp(2)" onblur="labelDown(2)">
+                                <label for="email" class="labelUp">E-mail</label>
+                            </div>
+                            <div>
+                                <button type="button" id="btn_send" class="btn">Связаться с нами</button>
+                            </div>
                         </form>
                         <div class="social-block">
-                            <div class="social vk">
-                                <img src="" alt="">
+                            <div class="aboutUs-a">
+                                <a href="https://vk.com/web_miravis" class="social vk">
+                                    <div></div>
+                                    <img src="image/social/vk.svg" alt="">
+                                </a>
                             </div>
-                            <div class="email-b">
+                            <div class="email-b aboutUs-a">
                                 <a href="mailto:info@miravis.ru">info@miravis.ru</a>
                             </div>
-                            <div class="phone-b">
+                            <div class="phone-b aboutUs-a">
                                 <a href="tel:+79608480050">8-960-848-00-50</a>
                             </div>
                         </div>
