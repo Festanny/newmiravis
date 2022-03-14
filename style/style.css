@@ -31,7 +31,7 @@ a {
 }
 
 section {
-    padding: 90px 0 90px;
+    padding: 90px 0;
     display: flex;
     align-items: center;
 }
@@ -40,10 +40,6 @@ section:first-of-type {
     padding-top: 180px;
     padding-bottom: 320px;
     background: linear-gradient(180deg, #010102 0%, #161616 50.04%), #161616;
-    display: block;
-}
-section:nth-of-type(2) {
-    padding: 90px 0 250px;
     display: block;
 }
 section:last-of-type {
