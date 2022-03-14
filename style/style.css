@@ -767,11 +767,11 @@ section#section8 {
     display: block;
     margin: 0 6px;
     border-radius: 50%;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
     overflow: hidden;
     position: relative;
 }
@@ -887,4 +887,21 @@ section#section8 {
     text-transform: uppercase;
     font-size: 18px;
     font-weight: bold;
+}
+
+.aboutHover {
+    position: relative;
+}
+.aboutHover::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--text-green);
+    transition: width .3s ease-in-out;
+}
+.aboutHover:hover::before {
+    width: 100%;
 }
