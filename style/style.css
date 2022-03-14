@@ -161,10 +161,6 @@ header nav .container div:hover ul li a:hover {
     background-color: rgb(31, 31, 31);
 }
 
-header nav .container div:hover ul li:last-of-type a {
-    border: 0;
-}
-
 header nav .container div > div::before {
     content: '';
     position: absolute;
@@ -738,4 +734,9 @@ section .site .info-block .info p:last-of-type {
     position: relative;
     padding: 20px 45px;
     margin-top: 30px;
+}
+
+section#section8 {
+    height: 100vh;
+    background-color: var(--block);
 }
