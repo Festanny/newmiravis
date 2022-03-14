@@ -8,6 +8,7 @@
     --btn-border: #fff;
     --btn-hover: rgb(255, 255, 255);
     --span-active: #2C2C2C;
+    --border-block: #3e3e3e;
 }
 
 html,
@@ -464,7 +465,7 @@ section .site .info-block .name {
 section .site .info-block .name span {
     font-size: 18px;
     padding: 15px 20px;
-    border-bottom: 1px solid #3e3e3e;;
+    border-bottom: 1px solid var(--border-block);
     cursor: pointer;
 }
 
@@ -745,28 +746,34 @@ section#section8 {
     position: relative;
 }
 
-#section8 .container .chat-img,
-#section8 .container .phone-img {
+#section8 .container::before,
+#section8 .container::after {
+    content: '';
     position: absolute;
-    object-fit: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
     opacity: .3;
 }
 
-#section8 .container .chat-img {
-    top: 20%;
+#section8 .container::before {
+    top: 25%;
     right: 0;
     width: 250px;
     height: 250px;
+    background-image: url('../image/order/chat.svg');
 }
-#section8 .container .phone-img {
-    top: 10%;
+
+#section8 .container::after {
+    top: 15%;
     right: 270px;
     width: 332px;
     height: 332px;
+    background-image: url('../image/order/phone.svg');
 }
 
 .svg-order {
-    margin-top: -200px;
+    margin-top: -18px;
 }
 
 .order .info-block .block-form {
@@ -924,4 +931,16 @@ section#section8 {
 }
 .aboutHover:hover::before {
     width: 100%;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--block);
+    border-top: 1px solid var(--border-block);
+}
+
+footer .footer {
+    padding: 50px 0;
+    text-align: center;
+    color: var(--text-green);
 }
