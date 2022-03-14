@@ -61,60 +61,90 @@ $('#upButton').click(function() {
 
 // offset top
 $(window).scroll(function () {
+	if ($(window).scrollTop() >= $('#start').offset().top - 60) {
+		$('#fastRightStart').addClass('active');
+	}
+	else {
+		$('#fastRightStart').removeClass('active');
+	}
 	if ($(window).scrollTop() >= $('#section1').offset().top - 60) {
+		$('#fastRightStart').removeClass('active');
 		$('#fast1').addClass('active');
+		$('#fastRight1').addClass('active');
 	}
 	else {
 		$('#fast1').removeClass('active');
+		$('#fastRight1').removeClass('active');
 	}
 	if ($(window).scrollTop() >= $('#section2').offset().top - 60) {
 		$('#fast2').addClass('active');
+		$('#fastRight2').addClass('active');
 		$('#fast1').removeClass('active');
+		$('#fastRight1').removeClass('active');
 	}
 	else {
 		$('#fast2').removeClass('active');
+		$('#fastRight2').removeClass('active');
 	}
 	if ($(window).scrollTop() >= $('#section3').offset().top - 60) {
 		$('#fast3').addClass('active');
+		$('#fastRight3').addClass('active');
 		$('#fast2').removeClass('active');
+		$('#fastRight2').removeClass('active');
 	}
 	else {
 		$('#fast3').removeClass('active');
+		$('#fastRight3').removeClass('active');
 	}
 	if ($(window).scrollTop() >= $('#section4').offset().top - 60) {
 		$('#fast4').addClass('active');
+		$('#fastRight4').addClass('active');
 		$('#fast3').removeClass('active');
+		$('#fastRight3').removeClass('active');
 	}
 	else {
 		$('#fast4').removeClass('active');
+		$('#fastRight4').removeClass('active');
 	}
 	if ($(window).scrollTop() >= $('#section5').offset().top - 60) {
 		$('#fast5').addClass('active');
+		$('#fastRight5').addClass('active');
 		$('#fast4').removeClass('active');
+		$('#fastRight4').removeClass('active');
 	}
 	else {
 		$('#fast5').removeClass('active');
+		$('#fastRight5').removeClass('active');
 	}
 	if ($(window).scrollTop() >= $('#section6').offset().top - 60) {
 		$('#fast6').addClass('active');
+		$('#fastRight6').addClass('active');
 		$('#fast5').removeClass('active');
+		$('#fastRight5').removeClass('active');
 	}
 	else {
 		$('#fast6').removeClass('active');
+		$('#fastRight6').removeClass('active');
 	}
 	if ($(window).scrollTop() >= $('#section7').offset().top - 60) {
 		$('#fast7').addClass('active');
+		$('#fastRight7').addClass('active');
 		$('#fast6').removeClass('active');
+		$('#fastRight6').removeClass('active');
 	}
 	else {
 		$('#fast7').removeClass('active');
+		$('#fastRight7').removeClass('active');
 	}
 	if ($(window).scrollTop() >= $('#section8').offset().top - 60) {
 		$('#fast8').addClass('active');
+		$('#fastRight8').addClass('active');
 		$('#fast7').removeClass('active');
+		$('#fastRight7').removeClass('active');
 	}
 	else {
 		$('#fast8').removeClass('active');
+		$('#fastRight8').removeClass('active');
 	}
 });
 
