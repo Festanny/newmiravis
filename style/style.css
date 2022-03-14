@@ -46,6 +46,9 @@ section:nth-of-type(2) {
     padding: 90px 0 250px;
     display: block;
 }
+section:last-of-type {
+    padding: 0;
+}
 
 h1,
 h2 {
@@ -564,7 +567,7 @@ section .site .info-block .info p:last-of-type {
     text-transform: uppercase;
 }
 
-.trust .block-title .info-text-title {
+.block-title .info-text-title {
     width: 560px;
     margin-top: 25px;
 }
@@ -739,4 +742,9 @@ section .site .info-block .info p:last-of-type {
 section#section8 {
     height: 100vh;
     background-color: var(--block);
+    margin-top: -4px;
+}
+
+.svg-order {
+    margin-top: -200px;
 }
