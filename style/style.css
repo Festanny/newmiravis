@@ -729,3 +729,13 @@ section .site .info-block .info p:last-of-type {
     height: 100%;
     margin-top: 0;
 }
+
+.affiliate .info-block .text {
+    font-size: 24px;
+}
+
+.affiliate .info-block .btn {
+    position: relative;
+    padding: 20px 45px;
+    margin-top: 30px;
+}

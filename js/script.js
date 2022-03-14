@@ -102,6 +102,13 @@ $(window).scroll(function () {
 	else {
 		$('#fast6').removeClass('active');
 	}
+	if ($(window).scrollTop() >= $('#section7').offset().top - 60) {
+		$('#fast7').addClass('active');
+		$('#fast6').removeClass('active');
+	}
+	else {
+		$('#fast7').removeClass('active');
+	}
 });
 
 // open desc site
