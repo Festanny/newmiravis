@@ -168,6 +168,10 @@ header nav .container div ul {
     padding-top: 15px;
 }
 
+header nav .container div.lang ul {
+    padding-top: 26px;
+}
+
 header nav .container div ul li {
     list-style: none;
 }
@@ -612,6 +616,25 @@ section .site .info-block .info p:last-of-type {
     text-transform: uppercase;
 }
 
+.trust .info-block .block:nth-of-type(1) {
+    order: 1;
+}
+.trust .info-block .block:nth-of-type(2) {
+    order: 3;
+}
+.trust .info-block .block:nth-of-type(3) {
+    order: 5;
+}
+.trust .info-block .block:nth-of-type(4) {
+    order: 2;
+}
+.trust .info-block .block:nth-of-type(5) {
+    order: 4;
+}
+.trust .info-block .block:nth-of-type(6) {
+    order: 6;
+}
+
 .block-title .info-text-title {
     width: 560px;
     margin-top: 25px;
@@ -772,6 +795,10 @@ section .site .info-block .info p:last-of-type {
 .reviews .slick-next {
     height: 100%;
     margin-top: 0;
+}
+
+.affiliate {
+    position: relative;
 }
 
 .affiliate .info-block .text {
