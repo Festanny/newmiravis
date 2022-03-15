@@ -787,7 +787,7 @@ section .site .info-block .info p:last-of-type {
 section#section8 {
     height: 100vh;
     background-color: var(--block);
-    margin-top: -4px;
+    margin-top: -8px;
     position: relative;
 }
 
