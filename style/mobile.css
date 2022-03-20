@@ -72,6 +72,12 @@
         width: 280px;
         height: 280px;
     }
+    .reviews .info-block .block>.img {
+        width: 450px;
+    }
+    .reviews .info-block .block .text {
+        padding: 30px;
+    }
 }
 
 @media screen and (max-width: 1366px) {
@@ -95,5 +101,23 @@
     }
     h1 {
         font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .slick-prev, .slick-next {
+        width: 60px!important;
+    }
+    .slick-next {
+        right: -60px!important;
+    }
+    .slick-prev {
+        left: -60px!important;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    header .logo .img {
+        width: 700px;
     }
 }

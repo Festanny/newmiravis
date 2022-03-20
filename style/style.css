@@ -151,13 +151,15 @@ header nav .container {
 }
 
 header nav .container>div {
-    padding-right: 60px;
+    padding-right: 30px;
+    margin-right: 30px;
     position: relative;
     cursor: default;
 }
 
 header nav .container>div:last-of-type {
     padding-right: 0;
+    margin-right: 0;
 }
 
 header nav .container div ul {
@@ -165,11 +167,11 @@ header nav .container div ul {
     margin: 0;
     display: none;
     position: absolute;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 header nav .container div.lang ul {
-    padding-top: 26px;
+    padding-top: 20px;
 }
 
 header nav .container div ul li {
@@ -203,7 +205,7 @@ header nav .container div>div::before {
     content: '';
     position: absolute;
     top: 50%;
-    right: 30px;
+    right: 0;
     transform: translateY(-50%);
     width: 16px;
     height: 10px;
@@ -219,7 +221,7 @@ header nav .container div:last-of-type>div:before {
 }
 
 header nav .container div:first-of-type>div::before {
-    right: 40px;
+    right: 10px;
 }
 
 header nav .btn-up #upButton {
@@ -778,6 +780,7 @@ section .site .info-block .info p:last-of-type {
     display: flex;
     align-items: center;
     margin-bottom: 35px;
+    width: fit-content;
 }
 
 .reviews .info-block .block .text .logo .img-logo {
