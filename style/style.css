@@ -308,6 +308,7 @@ header .logo {
     display: flex;
     align-items: center;
     margin-top: 15px;
+    width: fit-content;
 }
 
 .about .info-block .img-block .friends span {
@@ -821,27 +822,26 @@ section#section8 {
     position: relative;
 }
 
-section#section8::before {
+section#section8::before,
+section#section8::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: -200px;
-    width: 300px;
-    height: 300px;
     border: 30px solid var(--text-green);
     border-radius: 50%;
     opacity: .2;
 }
+
+section#section8::before {
+    top: 0;
+    left: -200px;
+    width: 300px;
+    height: 300px;
+}
 section#section8::after {
-    content: '';
-    position: absolute;
     bottom: -100px;
     right: -180px;
     width: 300px;
     height: 300px;
-    border: 30px solid var(--text-green);
-    border-radius: 50%;
-    opacity: .2;
 }
 
 #section8 .container {

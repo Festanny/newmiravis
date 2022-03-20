@@ -179,7 +179,7 @@ $(document).ready(function(){
 			  }
 			},
 			{
-			  breakpoint: 600,
+			  breakpoint: 1051,
 			  settings: {
 				slidesToShow: 2
 			  }
@@ -265,4 +265,4 @@ window.onload = function () {
 		document.body.classList.remove('loaded_hiding');
 	}, 500);
 	document.body.style.overflow = 'auto';
-}
+};
