@@ -276,10 +276,31 @@
         margin-top: 32px;
     }
     section#section2 {
+        position: relative;
         padding: 200px 0 90px 0;
     }
     .reviews .info-block .block>.img {
         display: none;
+    }
+    section#section2::before,
+    section#section2::after {
+        content: '';
+        position: absolute;
+        border: 30px solid var(--text-green);
+        border-radius: 50%;
+        opacity: .1;
+    }
+    section#section2::after {
+        bottom: 0;
+        right: -180px;
+        width: 300px;
+        height: 300px;
+    }
+    section#section2::before {
+        bottom: 250px;
+        left: -180px;
+        width: 300px;
+        height: 300px;
     }
 }
 
@@ -295,5 +316,128 @@
     }
     .trust .info-block .block {
         text-transform: none;
+    }
+    #section8 .container::after {
+        width: 230px;
+        height: 230px;
+    }
+    #section8 .container::before {
+        right: 160px;
+    }
+}
+
+@media screen and (max-width: 995px) {
+    section#section1::after {
+        width: 250px;
+        height: 250px;
+        right: -200px;
+    }
+    header::before {
+        background-size: contain;
+    }
+    header .logo .img {
+        width: 550px;
+    }
+    .about .info-block {
+        position: relative;
+    }
+    .about .info-block .img-block {
+        position: absolute;
+        right: 50px;
+        bottom: -100px;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+    }
+    .about .info-block .img-block .img {
+        width: 190px;
+    }
+    .about .info-block .img-block .friends span {
+        font-size: 19px;
+    }
+    .about .info-block .img-block .friends a {
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    h1 {
+        font-size: 42px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+    .site .info-block .info .desc .text,
+    .site .info-block .info .price span {
+        font-size: 15px;
+    }
+    .trust .info-block .block .num {
+        font-size: 70px;
+    }
+    .trust .info-block .block, .affiliate .info-block .text {
+        font-size: 18px;
+    }
+    .about .info-block .img-block {
+        right: 30px;
+    }
+    header .logo {
+        width: 70%;
+    }
+    header .logo .img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .about .info-block .img-block .img {
+        width: 160px;
+    }
+    .about .info-block .img-block .friends span {
+        font-size: 18px;
+    }
+    .about .info-block .img-block {
+        align-items: end;
+    }
+    .about .info-block .img-block {
+        right: 70px;
+    }
+    header {
+        height: 80vh;
+    }
+    section#section8::before {
+        display: none;
+    }
+    #section8 .container::after,
+    #section8 .container::before {
+        width: 200px;
+        height: 200px;
+    }
+    #section8 .container::before {
+        right: 120px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    section .site .info-block .name span {
+        font-size: 16px;
+    }
+    .whyWe .info-block .block:first-of-type {
+        width: 410px;
+        height: 410px;
+    }
+    .whyWe .info-block .block:nth-of-type(2) {
+        margin-top: 160px;
+    }
+    section#section2::before {
+        left: -220px;
+    }
+    section#section2::after {
+        right: -220px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .about .info-block .img-block {
+        right: 50px;
     }
 }

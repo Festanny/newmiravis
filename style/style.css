@@ -306,6 +306,7 @@ header .logo {
 
 .about .info-block .img-block .friends {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 15px;
     width: fit-content;
