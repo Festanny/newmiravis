@@ -434,10 +434,88 @@
     section#section2::after {
         right: -220px;
     }
+    .trust .info-block .block {
+        width: 80%;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .trust .info-block {
+        justify-content: center;
+    }
+    .trust .info-block .block:nth-of-type(1) {
+        order: 1;
+    }
+    .trust .info-block .block:nth-of-type(2) {
+        order: 2;
+    }
+    .trust .info-block .block:nth-of-type(3) {
+        order: 3;
+    }
+    .trust .info-block .block:nth-of-type(4) {
+        order: 4;
+    }
+    .trust .info-block .block:nth-of-type(5) {
+        order: 5;
+    }
+    .trust .info-block .block:nth-of-type(6) {
+        order: 6;
+    }
+    .order .info-block .block-form .social-block {
+        flex-wrap: wrap;
+    }
+    .order .info-block .block-form .social-block .aboutUs-a:nth-of-type(1) {
+        order: 3;
+        width: 100%;
+        margin-top: 20px;
+        margin-right: 0;
+    }
+    .order .info-block .block-form .social-block .aboutUs-a:nth-of-type(2) {
+        order: 1;
+    }
+    .order .info-block .block-form .social-block .aboutUs-a:nth-of-type(3) {
+        order: 2;
+    }
+    #section8 .container::after {
+        top: 25%;
+    }
+    #section8 .container::before {
+        top: 55%;
+    }
 }
 
 @media screen and (max-width: 850px) {
     .about .info-block .img-block {
         right: 50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .about .info-block .img-block {
+        position: inherit;
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin-top: 300px;
+        align-items: center;
+    }
+    .about .info-block .img-block .img {
+        width: 280px;
+    }
+    .about .info-block .img-block .friends span {
+        font-size: 28px;
+    }
+    .about .info-block .img-block .friends a {
+        height: 50px;
+    }
+    section#section1 {
+        padding: 180px 0 90px;
+    }
+    .about .info-block {
+        flex-wrap: wrap;
+    }
+    .order .info-text-title {
+        font-size: 17px;
     }
 }
