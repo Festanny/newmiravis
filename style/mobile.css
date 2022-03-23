@@ -519,3 +519,43 @@
         font-size: 17px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .reviews .info-block .block .text .text-main {
+        font-size: 14px;
+    }
+    .top-menu-point {
+        display: none;
+    }
+    header .logo span {
+        font-size: 30px;
+    }
+    .about .info-block .img-block {
+        margin-top: 250px;
+    }
+    section#section2 {
+        padding: 150px 0 90px 0;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        height: 60vh;
+    }
+    header::before {
+        left: -330px;
+    }
+    .about .info-block .block, .whyWe .info-block .block:first-of-type {
+        border-width: 20px;
+    }
+    .about .info-block .block, .whyWe .info-block .block:first-of-type {
+        width: 380px;
+        height: 380px;
+    }
+    .portfolio .info-block .block .text-h a, .reviews .info-block .block .text-h a {
+        width: 88%;
+    }
+    .portfolio .info-block .block .text-h, .reviews .info-block .block .text-h {
+        font-size: 14px;
+    }
+}
