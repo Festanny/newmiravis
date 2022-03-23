@@ -140,7 +140,7 @@ header nav {
 }
 
 header nav.fixed {
-    padding: 10px;
+    padding: 10px 0;
     background-color: var(--bg-op);
 }
 
@@ -148,6 +148,15 @@ header nav .container {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+header nav .logo-m {
+    height: 40px;
+    display: none;
+}
+
+header nav .logo-m img {
+    height: 100%;
 }
 
 header nav .container>div {

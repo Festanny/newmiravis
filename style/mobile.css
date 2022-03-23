@@ -628,7 +628,9 @@
     .portfolio .info-block .block .text-h, .reviews .info-block .block .text-h {
         font-size: 16px;
     }
-
+    .trust .info-block .block {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -649,8 +651,7 @@
         width: 260px;
         height: 260px;
     }
-    .whyWe .info-block .block:nth-of-type(2), .whyWe .info-block .block:nth-of-type(4), .whyWe .info-block .block:nth-of-type(3), .whyWe .info-block .block:nth-of-type(5),
-    .trust .info-block {
+    .whyWe .info-block .block:nth-of-type(2), .whyWe .info-block .block:nth-of-type(4), .whyWe .info-block .block:nth-of-type(3), .whyWe .info-block .block:nth-of-type(5) {
         width: 80%;
     }
     .trust .info-block {
@@ -782,9 +783,6 @@
     .portfolio .info-block .block .img {
         height: 230px;
     }
-    .portfolio .info-block .block .text {
-        font-size: 15px;
-    }
     .trust .info-block .block, .affiliate .info-block .text {
         font-size: 16px;
     }
@@ -812,11 +810,113 @@
     .reviews .info-block .block .text {
         padding: 25px;
     }
-    .portfolio .info-block .block .text-h, .reviews .info-block .block .text-h {
-        font-size: 15px;
+    .reviews .info-block h3 {
+        font-size: 14px;
+    }
+    .reviews .info-block .block .text .logo .img-logo {
+        height: 35px;
     }
 }
 
 @media screen and (max-width: 468px) {
+    header nav .logo-m {
+        display: block;
+        height: 15px;
+        padding-right: 0!important;
+    }
+    header {
+        height: auto;
+    }
+    header::before {
+        display: none;
+    }
+    header .header {
+        display: none;
+    }
+    section#section1 {
+        padding-top: 120px;
+    }
+    section#section1::after {
+        width: 220px;
+        height: 220px;
+        top: 110px;
+    }
+    section#section1::before {
+        width: 200px;
+        height: 200px;
+    }
+    header nav {
+        padding: 10px 0;
+        background-color: var(--bg-op);
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .order .info-text-title {
+        font-size: 16px;
+    }
+    header nav .container>div {
+        padding-right: 25px;
+    }
+    header nav .container .img div::before {
+        right: 5px;
+    }
+    header nav .container {
+        justify-content: start;
+    }
+    .trust .info-block .block .num {
+        width: 50px;
+    }
+    .about .info-block .img-block .img {
+        width: 220px;
+    }
+    .about .info-block .img-block .friends span {
+        font-size: 20px;
+    }
+    .about .info-block .img-block .friends a {
+        height: 40px;
+    }
+}
 
+@media screen and (max-width: 430px) {
+    header nav .img img {
+        height: 30px;
+    }
+    header nav .btn-up #upButton img {
+        width: 32px;
+        height: 20px;
+    }
+    header nav .container div:hover ul {
+        font-size: 14px;
+    }
+    header nav .container div:hover ul li a {
+        min-width: 150px;
+    }
+    header nav .logo-m {
+        height: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .trust .info-block .block .num {
+        font-size: 55px;
+    }
+    .container {
+        width: 90%;
+    }
+    header nav .btn-up #upButton span {
+        display: none;
+    }
+    header nav .container>div {
+        margin-right: 20px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    .portfolio .info-block .block .img {
+        height: 170px;
+    }
 }
