@@ -1079,10 +1079,12 @@ footer .footer {
     transition: opacity .3s;
     font-size: 13px;
     pointer-events: none;
+    visibility: hidden;
 }
 
 .top-menu-point ul li:hover::before {
     opacity: 1;
+    visibility: visible;
 }
 
 .top-menu-point ul li a {
