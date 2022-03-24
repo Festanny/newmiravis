@@ -124,6 +124,15 @@ h3 {
     color: var(--bg);
 }
 
+.el {
+    opacity: 0;
+}
+
+.el-show {
+    opacity: 1;
+    transition: all 1s;
+}
+
 header {
     background-color: #010102;
     height: 100vh;
@@ -153,10 +162,18 @@ header nav .container {
 header nav .logo-m {
     height: 40px;
     display: none;
+    animation: opacity 1s forwards;
+    opacity: 0;
 }
 
 header nav .logo-m img {
     height: 100%;
+}
+
+header nav .img {
+    animation: opacity 1s forwards;
+    animation-delay: .3s;
+    opacity: 0;
 }
 
 header nav .container>div {
@@ -177,6 +194,12 @@ header nav .container div ul {
     display: none;
     position: absolute;
     padding-top: 10px;
+}
+
+header nav .container div.lang {
+    animation: opacity 1s forwards;
+    animation-delay: .5s;
+    opacity: 0;
 }
 
 header nav .container div.lang ul {
@@ -240,6 +263,12 @@ header nav .container div:first-of-type>div::before {
     right: 10px;
 }
 
+header nav .btn-up {
+    animation: opacity 1s forwards;
+    animation-delay: .7s;
+    opacity: 0;
+}
+
 header nav .btn-up #upButton {
     display: flex;
     flex-direction: column;
@@ -274,6 +303,9 @@ header::before {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    animation: opacity 1s forwards;
+    animation-delay: .3s;
+    opacity: 0;
 }
 
 header .logo .img {
@@ -283,11 +315,17 @@ header .logo .img {
 
 header .logo .img img {
     width: 100%;
+    animation: opacity 2s forwards;
+    animation-delay: .5s;
+    opacity: 0;
 }
 
 header .logo span {
     font-size: 45px;
     color: var(--text-green);
+    animation: opacity 2s forwards;
+    animation-delay: .7s;
+    opacity: 0;
 }
 
 header .logo {
@@ -310,6 +348,21 @@ header .logo {
     display: flex;
     flex-direction: column;
     margin-left: 250px;
+}
+
+.about .info-block .img-block.el {
+    transform: translateX(90px);
+}
+
+.about .info-block .img-block.el.el-show {
+    transform: translateX(0);
+}
+
+.circles div.el {
+    border-radius: 30%;
+}
+.circles div.el.el-show {
+    border-radius: 50%;
 }
 
 .about .info-block .img-block .img {
@@ -347,6 +400,13 @@ header .logo {
 
 .about .info-block .img-block .friends:hover a img {
     filter: grayscale(0);
+}
+
+.about .info-block .block.el {
+    transform: rotate(45deg) translate(-90px, 90px);
+}
+.about .info-block .block.el.el-show {
+    transform: rotate(45deg) translate(0);
 }
 
 .about .info-block .block,
@@ -446,6 +506,46 @@ header .logo {
     z-index: 5;
     left: 50%;
     top: 50%;
+}
+
+.whyWe .info-block .block:nth-of-type(2) h2.el,
+.whyWe .info-block .block:nth-of-type(4) h2.el {
+    transform: translateX(-90px);
+}
+
+.whyWe .info-block .block:nth-of-type(2) h2.el.el-show,
+.whyWe .info-block .block:nth-of-type(4) h2.el.el-show {
+    transform: translateX(0);
+}
+
+.whyWe .info-block .block:nth-of-type(2) span.el,
+.whyWe .info-block .block:nth-of-type(4) span.el {
+    transform: translateX(-90px);
+}
+
+.whyWe .info-block .block:nth-of-type(2) span.el.el-show,
+.whyWe .info-block .block:nth-of-type(4) span.el.el-show {
+    transform: translateX(0);
+}
+
+.whyWe .info-block .block:nth-of-type(3) h2.el,
+.whyWe .info-block .block:nth-of-type(5) h2.el {
+    transform: translateX(90px);
+}
+
+.whyWe .info-block .block:nth-of-type(3) h2.el.el-show,
+.whyWe .info-block .block:nth-of-type(5) h2.el.el-show {
+    transform: translateX(0);
+}
+
+.whyWe .info-block .block:nth-of-type(3) span.el,
+.whyWe .info-block .block:nth-of-type(5) span.el {
+    transform: translateX(90px);
+}
+
+.whyWe .info-block .block:nth-of-type(3) span.el.el-show,
+.whyWe .info-block .block:nth-of-type(5) span.el.el-show {
+    transform: translateX(0);
 }
 
 .whyWe .info-block .block:nth-of-type(2),
@@ -1070,6 +1170,9 @@ footer .footer {
     top: 50%;
     right: 0px;
     transform: translateY(-50%);
+    animation: opacity 1s forwards;
+    animation-delay: .9s;
+    opacity: 0;
 }
 
 .top-menu-point ul {
@@ -1217,4 +1320,13 @@ footer .footer {
 	100% {
 		opacity: 0;
 	}
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

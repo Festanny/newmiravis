@@ -257,6 +257,7 @@ window.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+
 // preloader
 window.onload = function () {
 	document.body.classList.add('loaded_hiding');
@@ -265,4 +266,22 @@ window.onload = function () {
 		document.body.classList.remove('loaded_hiding');
 	}, 500);
 	document.body.style.overflow = 'auto';
+
+	// animation block
+	function onEntry(entry) {
+		entry.forEach(change => {
+			if (change.isIntersecting) {
+				change.target.classList.add('el-show');
+			}
+		});
+	}
+	let options = {
+		threshold: [0.3]
+	};
+	let observer = new IntersectionObserver(onEntry, options);
+	let elements = document.querySelectorAll('.el');
+
+	for (let elm of elements) {
+		observer.observe(elm);
+	}
 };
