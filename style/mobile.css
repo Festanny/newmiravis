@@ -709,6 +709,7 @@
     }
     .block-title .info-text-title {
         width: 100%;
+        font-size: 15px;
     }
     .slick-slider {
         width: 77%!important;
@@ -896,7 +897,7 @@
     }
     .slick-prev, .slick-next {
         height: 70px!important;
-        top: calc(100% + 35px)!important;
+        top: calc(100% + 34px)!important;
     }
     .slick-prev, .slick-next {
         width: 50%!important;
@@ -912,7 +913,20 @@
         height: 25px!important;
         top: 18px;
     }
-
+    .portfolio .info-block .block {
+        filter: none;
+    }
+    .portfolio .info-block .block .img {
+        height: 200px;
+    }
+    .order .info-block .block-form .social-block .aboutUs-a .social img {
+        width: 23px;
+        height: 23px;
+    }
+    .order .info-block .block-form .social-block .aboutUs-a .social {
+        width: 41px;
+        height: 41px;
+    }
 }
 
 @media screen and (max-width: 430px) {
@@ -952,5 +966,97 @@
     }
     .portfolio .info-block .block .img {
         height: 170px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .about .info-block .img-block {
+        margin-top: 100px;
+    }
+    section#section1 {
+        padding: 100px 0 50px;
+    }
+    .trust .info-block .block .num {
+        font-size: 50px;
+        padding-right: 25px;
+    }
+    .slick-next:before, .slick-prev:before {
+        height: 21px!important;
+        top: 20px;
+    }
+    .affiliate .info-block .btn,
+    .order .info-block form button,
+    section .site .info-block .info .btn {
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
+    .order .info-block .block-form {
+        width: 100%;
+    }
+    section#section8::after {
+        bottom: -180px;
+    }
+    section,
+    section#section2 {
+        padding: 50px 0;
+    }
+    .affiliate .info-block .text,
+    .order .info-text-title {
+        font-size: 15px;
+        font-weight: normal;
+    }
+    footer .footer {
+        text-align: left;
+    }
+    .about .info-block .img-block .img {
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    header nav .container div.lang img {
+        display: block;
+    }
+    header nav .container div.lang span {
+        display: none;
+    }
+    section#section1::after {
+        width: 200px;
+        height: 200px;
+    }
+    section#section1::before, section#section1::after {
+        border-width: 20px;
+    }
+    h1 {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 323px) {
+    header nav .container>div {
+        margin-right: 15px;
+    }
+    header nav .container .img div::before {
+        right: 3px;
+    }
+    header nav .img img {
+        height: 28px;
+    }
+    header nav .container div.lang img {
+        width: 24px;
+        height: 24px;
+    }
+    header nav .container div>div::before {
+        right: 1px;
+    }
+    header nav .container .img {
+        padding-right: 20px;
+    }
+    .about .info-block .img-block .friends span {
+        font-size: 18px;
+    }
+    .about .info-block .img-block .friends a {
+        height: 35px;
     }
 }

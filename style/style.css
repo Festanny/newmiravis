@@ -183,6 +183,13 @@ header nav .container div.lang ul {
     padding-top: 20px;
 }
 
+header nav .container div.lang img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    display: none;
+}
+
 header nav .container div ul li {
     list-style: none;
 }
