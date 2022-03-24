@@ -726,6 +726,12 @@
         border: none;
         height: auto;
     }
+    .about .info-block .block.el {
+        transform: rotate(0deg) translate(-90px);
+    }
+    .about .info-block .block.el.el-show {
+        transform: rotate(0deg) translate(0);
+    }
     .about .info-block .block .text, .whyWe .info-block .block:first-of-type .text {
         transform: none;
         width: 100%;
