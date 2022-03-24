@@ -631,6 +631,9 @@
     .trust .info-block .block {
         width: 100%;
     }
+    .slick-slider {
+        width: 80%!important;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -706,6 +709,9 @@
     }
     .block-title .info-text-title {
         width: 100%;
+    }
+    .slick-slider {
+        width: 77%!important;
     }
 }
 
@@ -792,6 +798,9 @@
     header .logo {
         width: 88%;
     }
+    .slick-slider {
+        width: 75%!important;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -815,6 +824,9 @@
     }
     .reviews .info-block .block .text .logo .img-logo {
         height: 35px;
+    }
+    .slick-slider {
+        width: 72%!important;
     }
 }
 
@@ -879,6 +891,28 @@
     .about .info-block .img-block .friends a {
         height: 40px;
     }
+    .slick-slider {
+        width: 100%!important;
+    }
+    .slick-prev, .slick-next {
+        height: 70px!important;
+        top: calc(100% + 35px)!important;
+    }
+    .slick-prev, .slick-next {
+        width: 50%!important;
+    }
+    .slick-next {
+        right: 0!important;
+    }
+    .slick-prev {
+        left: 0!important;
+    }
+    .slick-next:before,
+    .slick-prev:before {
+        height: 25px!important;
+        top: 18px;
+    }
+
 }
 
 @media screen and (max-width: 430px) {
