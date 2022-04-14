@@ -1,16 +1,3 @@
-:root {
-    --bg: #161616;
-    --bg-op: rgba(22, 22, 22, 0.95);
-    --block: #2C2C2C;
-    --text: #fff;
-    --text-green: #689775;
-    --border-b: #A1C9D4;
-    --btn-border: #fff;
-    --btn-hover: rgb(255, 255, 255);
-    --span-active: #2C2C2C;
-    --border-block: #3e3e3e;
-}
-
 html,
 body {
     margin: 0;
@@ -19,7 +6,7 @@ body {
     color: var(--text);
     font-family: 'Montserrat Alternates', 'Arial', sans-serif;
     font-size: 16px;
-    background-color: var(--bg);
+    background-color: #161616;
 }
 
 body {
