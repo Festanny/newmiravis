@@ -6,10 +6,43 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Miravis веб-студия. Мы готовы создать для вас сайт с современным и красивым дизайном, который будет соответстовать всем требованиям. Вы сможете заказать сайт или интернет-магазин под ключ. Быстро, качественно, недорого."> 
 	<meta name="keywords" content="веб-студия, веб-агенство, заказать сайт, купить сайт" />
+    <link rel="alternate" hreflang="en" href="https://miravis.ru/en" />
     <link rel="stylesheet" href="style/style.css">
 	<link rel="stylesheet" href="style/mobile.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+	<link rel="icon" href="image/favicon.ico" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <meta name="yandex-verification" content="0ec1526545183351" />
+	<meta name="google-site-verification" content="Bis_U0YulgSLnnE6_c-ykpfJf2XqYk2SZGvyV4RMZ-o" />
+	<!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(86210171, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true
+    });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/86210171" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
+
+<div class="preloader">
+    <div class="spin-wrapper">
+        <div class="spinner">
+        </div>
+    </div>
+    <span>Подождите...</span>
+</div>
 
 <body>
     <header id="start">
@@ -21,7 +54,7 @@
                 <div class="img">
                     <div><img src="image/power.png" alt=""></div>
                     <ul>
-                        <li><a href="#section1" id="fast1">Кто мы4?</a></li>
+                        <li><a href="#section1" id="fast1">Кто мы?</a></li>
                         <li><a href="#section2" id="fast2">Почему именно мы?</a></li>
                         <li><a href="#section3" id="fast3">Услуги</a></li>
                         <li><a href="#section4" id="fast4">Доверие к нам</a></li>
@@ -109,6 +142,274 @@
                 </div>
             </div>
         </section>
+        <section id="section3">
+            <div class="site container el">
+                <div class="block-title">
+                    <h1 class="title">Что за сайты мы создаем?</h1>
+                </div>
+                <div class="info-block">
+                    <div class="name">
+                        <span class="active" onclick="openSite(event, 'landing')">Одностраничный сайт (landing page)</span>
+                        <span onclick="openSite(event, 'multi')">Многостраничный сайт</span>
+                        <span onclick="openSite(event, 'store')">Интернет-магазин</span>
+                        <span onclick="openSite(event, 'design')">Дизайн сайта</span>
+                        <span onclick="openSite(event, 'adaptive')">Адаптация вашего сайта</span>
+                    </div>
+                    <div class="info" id="landing" style="display: block;">
+                        <div class="desc">
+                            <h3>Описание</h3>
+                            <div class="text">Одностраничник – это сайт, который состоит из одной короткой или длинной страницы и преследует коммерческую цель. По мнению интернет-маркетологов, такой формат сайта позволяет максимально привлечь внимание посетителей к его тематике. Одностраничники или Landing Page (посадочные страницы) создаются под один продукт, который нужно или быстро продать, если он уже известен целевой аудитории, или повысить его узнаваемость и популярность, если это новинка на рынке.</div>
+                        </div>
+                        <div class="price">
+                            <h3>Цена</h3>
+                            <span>От 5.000₽</span>
+                        </div>
+                        <a href="#section8" class="btn">Связаться с нами</a>
+                    </div>
+                    <div class="info" id="multi">
+                        <div class="desc">
+                            <h3>Описание</h3>
+                            <div class="text">
+                                <p>Многостраничный сайт – серьезный инструмент для компаний, у которых множество товаров и услуг, которые нуждаются в полноценной презентации. Одностраничник для таких целей не подойдет, так как на нем попросту не хватит места, а переизбыток информации для лендинга – не лучшее качество. Многостраничные ресурсы – не только площадка для продвижения товаров и услуг, но и показатель серьезности, высокого статуса компании.</p>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <h3>Цена</h3>
+                            <span>До 5 страниц - от 7.000₽</span>
+                            <span>От 6 страниц - от 12.000₽</span>
+                        </div>
+                        <a href="#section8" class="btn">Связаться с нами</a>
+                    </div>
+                    <div class="info" id="store">
+                        <div class="desc">
+                            <h3>Описание</h3>
+                            <div class="text">
+                                <p>Интернет магазин — это сайт с представленными на нем продуктами, где покупатель может выбрать и оплатить товар. Такой вид сайта считается сложным по своей конструкции, т.к. имеет разветвленную структуру с множеством переходов. Главное преимущество такого вида торговли в отсутствии необходимости нанимать большое количество персонала, арендовать здание и иметь склад с запасами. Для покупателя безусловным плюсом становится шопинг не выходя из дома.</p>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <h3>Цена</h3>
+                            <span>От 15.000 рублей</span>
+                        </div>
+                        <a href="#section8" class="btn">Связаться с нами</a>
+                    </div>
+                    <div class="info" id="design">
+                        <div class="desc">
+                            <h3>Описание</h3>
+                            <div class="text"><p>Дизайн сайта — это оформление контента, совокупность всех графических элементов на веб-странице. Раньше под веб-дизайном понимали исключительно визуальное оформление, но теперь на первый план вышло удобство пользователя, поэтому к задачам веб-дизайнера прибавились аналитика и грамотное структурирование информации на сайте.</p>
+                                <p>Основная задача дизайна — познакомить пользователя со страницей. Он облегчает взаимодействие пользователя с веб-страницей, а значит положительно влияет на конверсию и поведенческие факторы. Продуманный дизайн создает нужное впечатление о компании.</p>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <h3>Цена</h3>
+                            <span>От 2.000 рублей</span>
+                        </div>
+                        <a href="#section8" class="btn">Связаться с нами</a>
+                    </div>
+                    <div class="info" id="adaptive">
+                        <div class="desc">
+                            <h3>Описание</h3>
+                            <div class="text">
+                                <p>Адаптивность — это способность сайта «подстраиваться» под различные технические условия (а именно, под размеры экрана пользовательского устройства). Адаптивный сайт хорошо смотрится и на десктопном мониторе (обычный ПК), и на планшетном компьютере, и на экране смартфона. Причем качество отображения не зависит ни от диагонали, ни от позиционирования экрана.</p>
+                                <p>Адаптивная верстка — это такой способ создания веб-страниц, при котором они автоматически подстраиваются под размеры и ориентацию экрана устройства, а их дизайн варьируется в зависимости от действий пользователя.</p>
+                                <p>Цель адаптивной верстки — добиться того, чтобы сайт оставался удобным и обеспечивал конверсию при загрузке на разных устройствах.</p>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <h3>Цена</h3>
+                            <span>От 1.500 рублей</span>
+                        </div>
+                        <a href="#section8" class="btn">Связаться с нами</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section4" class="trust-section">
+            <div class="trust el">
+                <div class="container">
+                    <div class="block-title">
+                        <h1 class="title">Доверие</h1>
+                        <div class="info-text-title">Мы предоставляем Вам качественные профессиональные услуги дизайнеров и веб-разработчиков, и Вы получите именно тот сайт который хотели!</div>
+                    </div>
+                    <div class="info-block">
+                        <div class="block el">
+                            <div class="num">1</div>
+                            <span>Многолетний опыт работы</span>
+                        </div>
+                        <div class="block el">
+                            <div class="num">2</div>
+                            <span>Множество реализованных проектов</span>
+                        </div>
+                        <div class="block el">
+                            <div class="num">3</div>
+                            <span>Чистый код сайта</span>
+                        </div>
+                        <div class="block el">
+                            <div class="num">4</div>
+                            <span>Оптимизация сайта для лучшей индексации поисковыми системами</span>
+                        </div>
+                        <div class="block el">
+                            <div class="num">5</div>
+                            <span>Сопровождение и администра&shy;тирование Ваших сайтов</span>
+                        </div>
+                        <div class="block el">
+                            <div class="num">6</div>
+                            <span>Оплата после полного завершения проекта</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section5">
+            <div class="portfolio container el">
+                <div class="block-title">
+                    <h1 class="title">Портфолио</h1>
+                </div>
+                <div class="info-block carousel-portfolio">
+                    <div class="block">
+                        <div class="img">
+                            <img src="image/portfolio/SSVservice.png" alt="">
+                        </div>
+                        <div class="text">
+                            SSV сервис. Качественный ремонт и заправка
+                        </div>
+                        <div class="text-h"><a href="#">Перейти на сайт</a></div>
+                    </div>
+                    <div class="block">
+                        <div class="img">
+                            <img src="image/portfolio/first-pc.png" alt="">
+                        </div>
+                        <div class="text">
+                            SSV сервис. Качественный ремонт и заправка
+                        </div>
+                        <div class="text-h"><a href="#">Перейти на сайт</a></div>
+                    </div>
+                    <div class="block">
+                        <div class="img">
+                            <img src="image/portfolio/SSVservice.png" alt="">
+                        </div>
+                        <div class="text">
+                            SSV сервис. Качественный ремонт и заправка
+                        </div>
+                        <div class="text-h"><a href="#">Перейти на сайт</a></div>
+                    </div>
+                    <div class="block">
+                        <div class="img">
+                            <img src="image/portfolio/first-pc.png" alt="">
+                        </div>
+                        <div class="text">
+                            SSV сервис. Качественный ремонт и заправка
+                        </div>
+                        <div class="text-h"><a href="#">Перейти на сайт</a></div>
+                    </div>
+                    <div class="block">
+                        <div class="img">
+                            <img src="image/portfolio/SSVservice.png" alt="">
+                        </div>
+                        <div class="text">
+                            SSV сервис. Качественный ремонт и заправка
+                        </div>
+                        <div class="text-h"><a href="#">Перейти на сайт</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section6">
+            <div class="reviews container el">
+                <div class="block-title">
+                    <h1 class="title">Отзывы</h1>
+                </div>
+                <div class="info-block carousel-reviews">
+                    <div class="block">
+                        <div class="text">
+                            <a href="#" class="logo">
+                                <div class="img-logo">
+                                    <img src="image/ssvservice-logo.svg" alt="">
+                                </div>
+                                <h3>SSV сервис</h3>
+                            </a>
+                            <div class="text-main">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker.</div>
+                        </div>
+                        <div class="img">
+                            <img src="image/portfolio/SSVservice.png" alt="">
+                            <div class="text-h"><a href="#">Перейти на сайт</a></div>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="text">
+                            <a href="#" class="logo">
+                                <div class="img-logo">
+                                    <img src="image/ssvservice-logo.svg" alt="">
+                                </div>
+                                <h3>SSV сервис2</h3>
+                            </a>
+                            <div class="text-main">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker.</div>
+                        </div>
+                        <div class="img">
+                            <img src="image/portfolio/first-pc.png" alt="">
+                            <div class="text-h"><a href="#">Перейти на сайт</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section7">
+            <div class="affiliate container el">
+                <div class="block-title">
+                    <h1 class="title">Партнерская программа</h1>
+                </div>
+                <div class="info-block">
+                    <div class="text">В рамках партнерской программы мы платим вознаграждение нашему партнеру от 10 до 30 процентов от стоимости оказанной услуги приведенному клиенту! Это очень просто, надежно и не имеет подводных камней. Участником партнерской программы может стать каждый.</div>
+                    <a href="https://vk.me/web_miravis" target="_blank" class="btn">Связаться с нами</a>
+                </div>
+            </div>
+        </section>
+        <div class="svg-order">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2C2C2C" fill-opacity="1" d="M0,192L60,197.3C120,203,240,213,360,224C480,235,600,245,720,229.3C840,213,960,171,1080,176C1200,181,1320,235,1380,261.3L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        </div>
+        <section id="section8">
+            <div class="order container el">
+                <div class="block-title">
+                    <h1 class="title">Связь с нами</h1>
+                    <div class="info-text-title">Заполните форму, и мы свяжемся с Вами в ближайшее время.</div>
+                </div>
+                <div class="info-block">
+                    <div class="block-form">
+                        <form action="" method="POST">
+                            <div class="inputRel">
+                                <input type="text" id="fname" name="name" onfocus="labelUp(0)" onblur="labelDown(0)">
+                                <label for="fname" class="labelUp">Имя *</label>
+                            </div>
+                            <div class="inputRel">
+                                <input type="phone" id="phone" name="phone" onfocus="labelUp(1)" onblur="labelDown(1)">
+                                <label for="phone" class="labelUp">Телефон *</label>
+                            </div>
+                            <div class="inputRel">
+                                <input type="email" id="email" name="email" onfocus="labelUp(2)" onblur="labelDown(2)">
+                                <label for="email" class="labelUp">E-mail</label>
+                            </div>
+                            <div>
+                                <button type="button" id="btn_send" class="btn">Связаться с нами</button>
+                            </div>
+                        </form>
+                        <div class="social-block">
+                            <div class="aboutUs-a">
+                                <a href="https://vk.com/web_miravis" target="_blank" class="social vk">
+                                    <div></div>
+                                    <img src="image/social/vk.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="email-b aboutUs-a aboutHover">
+                                <a href="mailto:info@miravis.ru">info@miravis.ru</a>
+                            </div>
+                            <div class="phone-b aboutUs-a aboutHover">
+                                <a href="tel:+79608480050">8-960-848-00-50</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -131,8 +432,10 @@
         </ul>
     </div>
 
-
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

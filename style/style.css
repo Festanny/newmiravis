@@ -1,3 +1,16 @@
+:root {
+    --bg: #161616;
+    --bg-op: rgba(22, 22, 22, 0.95);
+    --block: #2C2C2C;
+    --text: #fff;
+    --text-green: #689775;
+    --border-b: #A1C9D4;
+    --btn-border: #fff;
+    --btn-hover: rgb(255, 255, 255);
+    --span-active: #2C2C2C;
+    --border-block: #3e3e3e;
+}
+
 html,
 body {
     margin: 0;
@@ -6,15 +19,39 @@ body {
     color: var(--text);
     font-family: 'Montserrat Alternates', 'Arial', sans-serif;
     font-size: 16px;
-    background-color: #161616;
+    background-color: var(--bg);
 }
 
 body {
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 * {
     box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: #EFF3F5;
+    border: 0px none #ffffff;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+/*    background: transparent;*/
+	background: rgb(255, 255, 255, 0.25);
+    border: 0px none #ffffff;
+    border-radius: 50px;
 }
 
 a {
@@ -227,6 +264,9 @@ header nav .container div:first-of-type>div::before {
 }
 
 header nav .btn-up {
+    animation: opacity 1s forwards;
+    animation-delay: .7s;
+    opacity: 0;
 }
 
 header nav .btn-up #upButton {
@@ -238,6 +278,7 @@ header nav .btn-up #upButton {
     font-size: 12px;
     cursor: pointer;
     transition: .3s ease-in-out;
+    pointer-events: none;
 }
 
 header nav .btn-up #upButton img {
